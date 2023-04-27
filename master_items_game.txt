@@ -1122,7 +1122,7 @@ Edited by: 'The One Of Wonders'"
 				"sound_empty"			"Weapon_MachineGun.ClipEmpty"
 				"sound_double_shot"		"Weapon_MachineGun.Fire"
 				"sound_burst"			"Weapon_MachineGun.FireCrit"
-				"sound_special1"		"Weapon_MachineGun.WindUp"
+				"sound_single_shot"		"Weapon_MachineGun.WindUp"
 				"sound_special2"		"Weapon_MachineGun.WindDown"
 				"sound_special3"		"Weapon_MachineGun.Spin"
 				"animation_replacement" 													
@@ -2677,7 +2677,7 @@ Weapon from: New Old Weapons Pack"
 				"sound_empty"			"Weapon_Chainsaw.Rev"									// This used to have a clip empty sound, but it makes no sense in this context!
 				"sound_double_shot"		"Weapon_Chainsaw.Fire"
 				"sound_burst"			"Weapon_Chainsaw.FireCrit"
-				"sound_special1"		"Weapon_Chainsaw.WindUp"
+				"sound_single_shot"		"Weapon_Chainsaw.WindUp"
 				"sound_special2"		"Weapon_Chainsaw.WindDown"
 				"sound_special3"		"Weapon_Chainsaw.Rev"
 				"tracer_effect"			"bullet_pistol_tracer01"								// Mostly removes stray bullet tracers if they happen to appear
@@ -7027,7 +7027,7 @@ Weapon by: 'Reagy'"
 				"sound_empty"			"Weapon_Cerberus.ClipEmpty"
 				"sound_double_shot"		"Weapon_Cerberus.Fire"
 				"sound_burst"			"Weapon_Cerberus.FireCrit"
-				"sound_special1"		"Weapon_Cerberus.WindUp"
+				"sound_single_shot"		"Weapon_Cerberus.WindUp"
 				"sound_special2"		"Weapon_Cerberus.WindDown"
 				"sound_special3"		"Weapon_Cerberus.Spin"
 			}
@@ -7303,7 +7303,7 @@ Weapon by: 'Reagy'"
 				"sound_empty"			"Weapon_MachineGun.ClipEmpty"
 				"sound_double_shot"		"Weapon_MachineGun762.Fire"
 				"sound_burst"			"Weapon_MachineGun.FireCrit"
-				"sound_special1"		"Weapon_Tomislav.WindUp"
+				"sound_single_shot"		"Weapon_Tomislav.WindUp"
 				"sound_special2"		"Weapon_Null"
 				"sound_special3"		"Weapon_Null"
 			}
@@ -8383,7 +8383,7 @@ Weapon by: 'The One Of Wonders'"
 			{
 				"sound_double_shot"		"Weapon_Laika.Fire"	
 				"sound_burst"			"Weapon_Laika.FireCrit"	
-				"sound_special1"		"Weapon_Laika.SpinUp"
+				"sound_single_shot"		"Weapon_Laika.SpinUp"
 				"sound_special2"		"Weapon_Laika.StopSpin"	
 				"sound_special3"		"Weapon_Laika.Spin"	
 				"tracer_effect"			"laser_tracer"
@@ -8685,7 +8685,7 @@ Weapon by: 'Reagy'"
 				"sound_empty"			"Weapon_Tokamak.ClipEmpty"
 				"sound_double_shot"		"Weapon_Tokamak.Fire"
 				"sound_burst"			"Weapon_Tokamak.FireCrit"
-				"sound_special1"		"Weapon_Tokamak.WindUp"
+				"sound_single_shot"		"Weapon_Tokamak.WindUp"
 				"sound_special2"		"Weapon_Tokamak.WindDown"
 				"sound_special3"		"Weapon_Tokamak.Spin"
 			}
@@ -9733,7 +9733,7 @@ Weapon by: 'Reagy'"
 				"sound_empty"			"Weapon_Leviathan.ClipEmpty"
 				"sound_double_shot"		"Weapon_Leviathan.Fire"
 				"sound_burst"			"Weapon_Leviathan.FireCrit"
-				"sound_special1"		"Weapon_Leviathan.WindUp"
+				"sound_single_shot"		"Weapon_Leviathan.WindUp"
 				"sound_special2"		"Weapon_Leviathan.WindDown"
 				"sound_special3"		"Weapon_Leviathan.Spin"
 				"tracer_effect"			"bullet_hunting_revolver_tracer01"
@@ -11118,7 +11118,7 @@ Weapon by: 'The One Of Wonders'"
 				"sound_empty"			"Weapon_MachineGun.ClipEmpty"
 				"sound_double_shot"		"Weapon_M2HB.Fire"	
 				"sound_burst"			"Weapon_M2HB.FireCrit"	
-				"sound_special1"		"null"
+				"sound_single_shot"		"null"
 				"sound_special2"		"null"
 				"sound_special3"		"null"	
 				"tracer_effect"			"bullet_hunting_revolver_tracer01"
@@ -13899,7 +13899,7 @@ I know a quite rotund fellow who would have an interest in this."
 		    "item_name"					"Lord of the House"
 			"prefab"                    "weapon_umbrella"
 			"item_type_name"			"Money"
-			"show_in_armory"            "1"
+			"show_in_armory"            "0"
 			"item_description"			"
 Manual Boost (Mouse2): Give friendly 5s of Crit Boost
 
@@ -14378,7 +14378,7 @@ Weapon by: 'The One Of Wonders'"
 				"sound_empty"			"Weapon_TFC_Minigun.ClipEmpty"
 				"sound_double_shot"		"Weapon_TFC_Minigun.Fire"
 				"sound_burst"			"Weapon_TFC_Minigun.FireCrit"
-				"sound_special1"		"Weapon_TFC_Minigun.WindUp"
+				"sound_single_shot"		"Weapon_TFC_Minigun.WindUp"
 				"sound_special2"		"Weapon_TFC_Minigun.WindDown"
 				"sound_special3"		"Weapon_TFC_Minigun.Spin"
 				"tracer_effect"			"bullet_scattergun_tracer01"
@@ -17906,7 +17906,7 @@ Weapon from: Tangerine Paint and Grunt's Weapon Addons"
 		{
 			"name"						"TF_WEAPON_BARRAGEPOD"							
 			"prefab"					"weapon_rocketlauncher"
-			"show_in_armory"			"1"
+			"show_in_armory"			"0"
 			"item_quality"				"rarity2"
 
 			"propername"				"1"
@@ -18300,7 +18300,7 @@ Weapon by: 'The One Of Wonders'"
 			{
 				"sound_double_shot"		"Weapon_AKCannon.Fire"
 				"sound_burst"			"Weapon_AKCannon.FireCrit"	
-				"sound_special1"		"Weapon_Tomislav.WindUp"
+				"sound_single_shot"		"Weapon_Tomislav.WindUp"
                 "sound_special2"		"Weapon_Null"
 				"sound_special3"		"Weapon_Null"				
 			}
@@ -18531,7 +18531,7 @@ Weapon by: 'The One Of Wonders'"
 				"sound_empty"			"Weapon_MachineGun.ClipEmpty"
 				"sound_double_shot"		"Weapon_TankMini.Fire"
 				"sound_burst"			"Weapon_TankMini.FireCrit"
-				"sound_special1"		"Weapon_Tomislav.WindUp"
+				"sound_single_shot"		"Weapon_Tomislav.WindUp"
 				"sound_special2"		"null"
 				"sound_special3"		"null"
 				"tracer_effect"         "bullet_scattergun_tracer01"
@@ -18892,7 +18892,7 @@ Weapon by: 'The One Of Wonders'"
 			{
 				"sound_double_shot"		"Weapon_FlakGun.Fire"	
 				"sound_burst"			"Weapon_FlakGun.FireCrit"	
-				"sound_special1"		"Weapon_FlakGun.WindUp"	
+				"sound_single_shot"		"Weapon_FlakGun.WindUp"	
 				"sound_special2"		"Weapon_FlakGun.WindDown"
 				"sound_special3"		"Weapon_FlakGun.Spin"				
 			}
@@ -21782,7 +21782,7 @@ Weapon by: 'The One Of Wonders'"
 			{
 				"sound_double_shot"		"Weapon_Beatophone.Fire"
 				"sound_burst"			"Weapon_Beatophone.FireCrit"	
-				"sound_special1"		"Weapon_Beatophone.WindUp"	
+				"sound_single_shot"		"Weapon_Beatophone.WindUp"	
 				"sound_special2"		"Weapon_Beatophone.WindDown"
 				"sound_special3"		"Weapon_Beatophone.Spin"
 				"tracer_effect"         "bullet_scattershock_tracer01"	
@@ -21900,7 +21900,7 @@ Weapon by: 'The One Of Wonders'"
 			{
 				"sound_double_shot"		"Weapon_Laika.Fire"	
 				"sound_burst"			"Weapon_Laika.FireCrit"	
-				"sound_special1"		"Weapon_Laika.SpinUp"
+				"sound_single_shot"		"Weapon_Laika.SpinUp"
 				"sound_special2"		"Weapon_Laika.StopSpin"	
 				"sound_special3"		"Weapon_Laika.Spin"	
 				"tracer_effect"         "bullet_scattershock_tracer01"	
@@ -22322,7 +22322,7 @@ Weapon by: 'The One Of Wonders'"
 				"sound_empty"			"Weapon_MachineGun.ClipEmpty"
 				"sound_double_shot"		"Weapon_AssaultDoctrine.Fire"	
 				"sound_burst"			"Weapon_AssaultDoctrine.FireCrit"	
-				"sound_special1"		"Weapon_TankMini.WindUp"
+				"sound_single_shot"		"Weapon_TankMini.WindUp"
 				"sound_special2"		"Weapon_TankMini.WindDown"
 				"sound_special3"		"Weapon_TankMini.Spin"	
 			}
@@ -23716,17 +23716,17 @@ Sentry replacement by: 'rotzloeffel' 'Gadget'"
 				}
 				"voice pitch scale"
 				{
-					"attribute_class"	"custom_sentry_damage"
+					"attribute_class"	"mult_engy_sentry_damage"
 					"value"				"1.5"
 				}	
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
-					"attribute_class"	"custom_sentry_firerate"
+					"attribute_class"	"mult_sentry_firerate"
 					"value"				"1.4"
 				}	
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
-					"attribute_class"	"custom_sentry_turnspeed"
+					"attribute_class"	"mult_sentry_turnrate_overriden"
 					"value"				"1.33"
 				}	
 			}
@@ -23789,17 +23789,17 @@ Sentry replacement by: 'rotzloeffel' 'Gadget'"
 					"value" 				"0.6"
 				}
 				// Hidden build rate bonuses
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"dispenser_build_rate_multiplier"
 					"value"				"1.2"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"teleporter_build_rate_multiplier"
 					"value"				"1.2"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"sentry_build_rate_multiplier"
 					"value"				"1.2"
@@ -23884,12 +23884,12 @@ Weapon by: 'The One Of Wonders'"
 					"attribute_class"	"mult_crit_chance"
 					"value"				"0"
 				}
-				"voice pitch scale"												
+				"weapon_stattrak_module_scale"												
 				{
 					"attribute_class"	"mult_single_wep_deploy_time"
 					"value"				"1.8"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_deploy_time"
 					"value"				"1.8"
@@ -24250,37 +24250,37 @@ Weapon by: 'The One Of Wonders'"
 			}
 			"attributes"
 			{
-			    "voice pitch scale"																
+			    "weapon_stattrak_module_scale"																
 				{
 					"attribute_class"	"mult_projectile_speed"
 					"value" 			"2"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_clipsize"
 					"value"				"0.05"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_postfiredelay"
 					"value"				"0.4"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_reload_time"
 					"value"				"0.4"
 				}
-				"voice pitch scale"	
+				"weapon_stattrak_module_scale"	
 				{
 					"attribute_class"	"mult_dmg"
 					"value" 			"2.1"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_spread_scale"
 					"value" 			"0.5"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_maxammo_primary"
 					"value" 			"0.25333333333"
@@ -24377,17 +24377,17 @@ Weapon by: 'The One Of Wonders'"
 					"attribute_class"	"mult_dmgtaken"
 					"value" 			"1.33"
 				}
-			    "voice pitch scale"
+			    "weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_dmg"
 					"value"				"4"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_dmg_vs_buildings"
 					"value"				"6"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_postfiredelay"
 					"value"				"1.5"
@@ -24468,7 +24468,7 @@ Weapon by: 'The One Of Wonders'"
 				}
 				"overheal bonus"																
 				{
-					"attribute_class"	"custom_maximum_overheal"
+					"attribute_class"	"mult_medigun_overheal_amount"
 					"value" 			"1.25"
 				}
 				"heal rate bonus"																
@@ -24481,12 +24481,12 @@ Weapon by: 'The One Of Wonders'"
 					"attribute_class"	"add_maxhealth"
 					"value" 			"-100"
 				}
-				"voice pitch scale"				 // These disable Ubercharge, even from Uber on hit Primaries											
+				"weapon_stattrak_module_scale"				 // These disable Ubercharge, even from Uber on hit Primaries											
 				{
 					"attribute_class"	"mult_medigun_uberchargerate"
 					"value"				"0"
 				}
-				"voice pitch scale" 
+				"weapon_stattrak_module_scale" 
 				{
 					"attribute_class"	"mult_medigun_overheal_uberchargerate"
 					"value"				"0"
@@ -24639,27 +24639,27 @@ Weapon by: 'The One Of Wonders'"
 					"attribute_class"	"mult_player_aiming_movespeed"
 					"value" 			"1"
 				}
-				"voice pitch scale"																
+				"weapon_stattrak_module_scale"																
 				{
 					"attribute_class"	"mult_projectile_speed"
 					"value" 			"0.8"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_postfiredelay"
 					"value"				"1.9"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_clipsize"
 					"value"				"0.15"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_reload_time"
 					"value"				"1.33"
 				}
-				"voice pitch scale"	
+				"weapon_stattrak_module_scale"	
 				{
 					"attribute_class"	"mult_dmg"
 					"value" 			"0.65"
@@ -24684,17 +24684,17 @@ Weapon by: 'The One Of Wonders'"
 					"attribute_class"	"mod_rocket_gravity"
 					"value"				"1.15"
 				}				
-				"voice pitch scale"      
+				"weapon_stattrak_module_scale"      
 				{
 					"attribute_class"	"mult_wpn_burndmg"
 					"value" 			"0.5"
 				}
-                "voice pitch scale"
+                "weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_dmg_vs_burning"
 					"value"				"0.65"
 				}				
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_wpn_burntime"
 					"value"				"0.33"
@@ -24864,12 +24864,12 @@ Weapon by: 'The One Of Wonders'"
 					"attribute_class"	"mult_crit_chance"
 					"value"				"0"
 				}
-				"voice pitch scale"												
+				"weapon_stattrak_module_scale"												
 				{
 					"attribute_class"	"mult_single_wep_deploy_time"
 					"value"				"1.67"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_deploy_time"
 					"value"				"1.67"
@@ -24955,12 +24955,12 @@ Weapon by: 'The One Of Wonders'"
 					"attribute_class"	"mult_crit_chance"
 					"value"				"0"
 				}
-				"voice pitch scale"												
+				"weapon_stattrak_module_scale"												
 				{
 					"attribute_class"	"mult_single_wep_deploy_time"
 					"value"				"1.67"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_deploy_time"
 					"value"				"1.67"
@@ -25375,22 +25375,22 @@ Wearable by: 'The One Of Wonders'"
 					"attribute_class"	"or_crit_vs_playercond"
 					"value" 			"48"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_postfiredelay"
 					"value" 			"3"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_dmg"
 					"value" 			"1.5"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_clipsize"
 					"value"				"0.5"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_spread_scale"
 					"value"				"0.65"
@@ -25455,32 +25455,32 @@ Wearable by: 'The One Of Wonders'"
 			}
 			"attributes"
 			{
-			    "voice pitch scale"
+			    "weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_bullets_per_shot"
 					"value" 			"2.5"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_postfiredelay"
 					"value" 			"0.6875"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_dmg"
 					"value" 			"0.25"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_spread_scale"
 					"value"				"1.33"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_deploy_time"
 					"value"				"1.25"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_crit_chance"
 					"value"				"0"
@@ -25701,17 +25701,17 @@ Sentry replacement by: 'Pyanodon'"
 					"attribute_class"	"upgrade_rate_mod"
 					"value" 			"0.8"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"building_cost_reduction"
 					"value" 			"1.53846153846"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mod_teleporter_cost"
 					"value" 			"2"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"sentry_build_rate_multiplier"
 					"value" 			"0.0001"
@@ -25722,19 +25722,19 @@ Sentry replacement by: 'Pyanodon'"
 					"attribute_class"	"custom_sentry_type"
 					"value" 			"3" // Lucycharm
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
-					"attribute_class"	"custom_sentry_damage"
+					"attribute_class"	"mult_engy_sentry_damage"
 					"value"				"0.8"
 				}	
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
-					"attribute_class"	"custom_sentry_firerate"
+					"attribute_class"	"mult_sentry_firerate"
 					"value"				"0.67"
 				}	
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
-					"attribute_class"	"custom_sentry_turnspeed"
+					"attribute_class"	"mult_sentry_turnrate_overriden"
 					"value"				"0.65"
 				}	
 			}
@@ -25906,7 +25906,7 @@ Weapon by: 'The One Of Wonders'"
 					"attribute_class"	"mult_maxammo_secondary"
 					"value" 			"0.5"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_clipsize"
 					"value"				"0.125"
@@ -25996,32 +25996,32 @@ Weapon by: 'The One Of Wonders'"
 					"attribute_class"	"mult_wpn_burndmg"
 					"value" 			"1.25"
 				}					
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_bullets_per_shot"
 					"value" 			"1.6"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_postfiredelay"
 					"value" 			"0.85"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_clipsize"
 					"value"				"1.66666666667"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_reload_time"
 					"value"				"0.75"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_dmg"
 					"value" 			"0.75"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_spread_scale"
 					"value"				"2"
@@ -26036,12 +26036,12 @@ Weapon by: 'The One Of Wonders'"
 					"attribute_class"	"mult_crit_chance"
 					"value"				"0"
 				}
-                "voice pitch scale"
+                "weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_dmg_vs_burning"
 					"value"				"0.5"
 				}
-                "voice pitch scale"
+                "weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_projectile_range"
 					"value"				"0.0666666666666666667"
@@ -26103,27 +26103,27 @@ Weapon by: 'The One Of Wonders'"
 					"attribute_class"	"mult_crit_chance"
 					"value"				"0"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_clipsize"
 					"value"				"0.2"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_reload_time"
 					"value"				"0.4"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_spread_scale"
 					"value"				"0.5"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_postfiredelay"
 					"value"				"0.5"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_maxammo_primary"
 					"value"				"0.76"
@@ -26488,7 +26488,7 @@ Weapon By: 'Colrot'"
 					"value" 			"24"
 				}
 				// Backend stuff
-				"voice pitch scale"																
+				"weapon_stattrak_module_scale"																
 				{
 					"attribute_class"	"mult_repair_value"
 					"value"				"0.01"													
@@ -26561,7 +26561,7 @@ Weapon by: 'Reagy'"
 			}
 			"attributes"
 			{
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_bullets_per_shot"
 					"value"				"4"
@@ -26702,7 +26702,7 @@ Weapon by: 'The One Of Wonders'"
 			}
 			"attributes"
 			{
-			    "voice pitch scale"
+			    "weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_bullets_per_shot"
 					"value"				"0.2"
@@ -26722,7 +26722,7 @@ Weapon by: 'The One Of Wonders'"
 					"attribute_class"	"mult_reload_time"
 					"value"				"0.85"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_dmg"
 					"value"				"5"
@@ -26986,7 +26986,7 @@ Weapon by: 'The One Of Wonders'"
 					"attribute_class"	"add_onhit_addcond_self"  
 					"value" 			"69 2"                   
  				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_dmg_vs_burning"
 					"value"				"1.35"
@@ -27065,7 +27065,7 @@ Weapon by: 'The One Of Wonders'"
 					"attribute_class"	"self_mark_for_death_on_miss"
 					"value"				"2"
 				}
-				"voice pitch scale"													
+				"weapon_stattrak_module_scale"													
 				{
 					"attribute_class"	"mult_crit_chance"
 					"value"				"1.5"
@@ -27163,22 +27163,22 @@ Weapon by: 'The One Of Wonders'"
 					"value" 			"0.3"
 				}
 				// backend stuff
-                "voice pitch scale"																
+                "weapon_stattrak_module_scale"																
 				{
 					"attribute_class"	"mult_bullets_per_shot"
 					"value" 			"0.5"
 				}
-                "voice pitch scale"
+                "weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_dmg"
 					"value"				"1.33333333333"
 				}				
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_maxammo_primary"
 					"value"				"0.78125"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_postfiredelay"
 					"value"				"0.75"
@@ -27259,12 +27259,12 @@ Weapon by: 'The One Of Wonders'"
 					"attribute_class"	"set_dmgtype_ignite"
 					"value" 			"1"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_dmg"
 					"value" 			"8"
 				}
-                "voice pitch scale"
+                "weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_postfiredelay"
 					"value"				"1.45"
@@ -27279,17 +27279,17 @@ Weapon by: 'The One Of Wonders'"
 					"attribute_class"	"mult_wpn_burntime"
 					"value"				"0.3"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_clipsize"
 					"value"				"0.6666666667"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_reload_time"
 					"value"				"1.9"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_explosion_radius"
 					"value"				"0.7"
@@ -27299,7 +27299,7 @@ Weapon by: 'The One Of Wonders'"
 					"attribute_class"	"mod_rocket_gravity"
 					"value"				"0.5"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_spread_scale"
 					"value"				"0.2"
@@ -27403,12 +27403,12 @@ Weapon by: 'The One Of Wonders'"
 					"attribute_class"	"explosive_bullets"
 					"value"				"1"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_bullets_per_shot"
 					"value"				"0.1"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_clipsize"
 					"value"				"0.2"
@@ -27704,42 +27704,42 @@ Weapon by: 'The One Of Wonders'"
 					"value"				"1.33"
 				}
 				// Weapon specific stuff
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_clipsize"
 					"value"				"1.5"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_maxammo_primary"
 					"value"				"0.75"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_dmg"
 					"value"				"0.45"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_projectile_speed"
 					"value"				"0.5"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_reload_time"
 					"value"				"1.4"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_postfiredelay"
 					"value"				"1.5"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"blast_dmg_to_self"
 					"value"				"0.1"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_dmgself_push_force"
 					"value"				"0.05"
@@ -27815,17 +27815,17 @@ Weapon by: 'The One Of Wonders'"
 					"value"				"1.1"
 				}
 				// Backend stuff, this can actually upgrade, repair and boost buildings but b a r e l y
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_construction_value"
 					"value" 			"0.5"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_repair_value"
 					"value" 			"0.25"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"upgrade_rate_mod"
 					"value" 			"0"
@@ -27881,17 +27881,17 @@ Weapon by: 'The One Of Wonders'"
 					"attribute_class"	"mod_sniper_soft_zoom"
 					"value"				"1"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_postfiredelay"
 					"value" 			"0.9"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_dmg"
 					"value" 			"0.06"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_bullets_per_shot"
 					"value" 			"15"
@@ -27906,12 +27906,12 @@ Weapon by: 'The One Of Wonders'"
 					"attribute_class"	"mod_max_primary_clip_override"
 					"value"				"-1"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"headshot_damage_modify"
 					"value" 			"0.5"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_maxammo_primary"
 					"value"				"0.83333333333"
@@ -27974,12 +27974,12 @@ Weapon by: 'The One Of Wonders'"
 					"attribute_class"	"mod_max_primary_clip_override"
 					"value"				"-1"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_maxammo_secondary"
 					"value" 			"1.3333333333333333333"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_spread_scale"
 					"value"				"0.00001"
@@ -28068,27 +28068,27 @@ Wearable by: 'The One Of Wonders'"
 					"attribute_class"	"mult_maxammo_grenades1"
 					"value" 			"2"
 				}
-				 "voice pitch scale"
+				 "weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_dmg"
 					"value" 			"0.223"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_clipsize"
 					"value"				"10"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_postfiredelay"
 					"value" 			"0.0458"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_maxammo_primary"
 					"value" 			"7.5"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_reload_time"
 					"value" 			"1.556"
@@ -28543,12 +28543,12 @@ Repurposed by: 'Majro'"
 					"attribute_class"		"blast_dmg_to_self"
 					"value"					"6.0" 
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"		"mult_postfiredelay"
 					"value"					"2" 
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"		"mult_dmg"
 					"value"					"8.0" 
@@ -28568,7 +28568,7 @@ Repurposed by: 'Majro'"
 					"attribute_class"		"set_scattergun_no_reload_single"
 					"value"					"1" 
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"		"mult_player_aiming_movespeed"
 					"value" 				"0.95"
@@ -28865,7 +28865,7 @@ Repurposed by: 'Majro'"
 					"attribute_class"	"rocket_lifetime"
 					"value"				"0.00001"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"blast_dmg_to_self"
 					"value" 			"0"
@@ -28974,7 +28974,7 @@ Weapon by: 'Colrot' and 'Mister Mann'"
 					"attribute_class"	"mult_dmg"
 					"value"				"0.46"
 				}
-				"voice pitch scale" /// Hidden holster penalty
+				"weapon_stattrak_module_scale" /// Hidden holster penalty
 				{
 					"attribute_class"	"mult_deploy_time"
 					"value" 			"1.5"
@@ -28984,7 +28984,7 @@ Weapon by: 'Colrot' and 'Mister Mann'"
 					"attribute_class"	"mult_dmgtaken"
 					"value"				"1.15"
 				}
-			    "voice pitch scale"
+			    "weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_crit_chance"
 					"value"				"0.152"
@@ -29186,27 +29186,27 @@ Weapon by: 'The One Of Wonders'"
 					"attribute_class"	"add_onhit_addhealth"
 					"value"				"1"
 				}
-			    "voice pitch scale"
+			    "weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_dmg"
 					"value" 			"0.177"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_postfiredelay"
 					"value" 			"0.045"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_reload_time"
 					"value" 			"0.5"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_clipsize"
 					"value" 			"8.33333333333"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_maxammo_primary"
 					"value" 			"8.33333333333"
@@ -29290,7 +29290,7 @@ Weapon by: 'The One Of Wonders'"
 					"attribute_class"	"mult_cloak_meter_regen_rate"
 					"value"				"6"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_player_movespeed_cloaked" // hard to notice, but it's nice
 					"value"				"1.1"
@@ -29300,7 +29300,7 @@ Weapon by: 'The One Of Wonders'"
 					"attribute_class"	"lose_cloak_on_damage"
 					"value" 			"100"
 				}
-				"voice pitch scale"																
+				"weapon_stattrak_module_scale"																
 				{
 					"attribute_class"	"mult_cloak_rate"
 					"value" 			"1.7"
@@ -29378,22 +29378,22 @@ Weapon by: 'The One Of Wonders'"
 					"attribute_class"	"mult_flame_life"
 					"value" 			"1"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_dmg"
 					"value" 			"0.2"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_maxammo_primary"
 					"value" 			"2"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_postfiredelay"
 					"value" 			"0.6"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"headshot_damage_modify"
 					"value"				"0.75"
@@ -29486,27 +29486,27 @@ Weapon by: 'The One Of Wonders'"
 			}
 			"attributes"
 			{
-			    "voice pitch scale"
+			    "weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_dmg"
 					"value" 			"0.125"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_clipsize"
 					"value" 			"5"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_postfiredelay"
 					"value" 			"0.04"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"headshot_damage_modify"
 					"value" 			"5"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_maxammo_primary"
 					"value" 			"5"
@@ -29571,27 +29571,27 @@ Weapon by: 'The One Of Wonders'"
 			}
 			"attributes"
 			{
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_clipsize"
 					"value"				"2" 
 				}
-			    "voice pitch scale"
+			    "weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_dmg"
 					"value" 			"0.45"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_postfiredelay"
 					"value" 			"0.556"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_maxammo_primary"
 					"value" 			"4"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_spread_scale"
 					"value"				"1.5"
@@ -29601,7 +29601,7 @@ Weapon by: 'The One Of Wonders'"
 					"attribute_class"	"mult_player_movespeed"
 					"value"				"0.85"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_reload_time"
 					"value"				"0.5"
@@ -29797,12 +29797,12 @@ Weapon by: 'Colrot'"
 					"value"				"1"
 				}
 				//plugin stuff
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
                 {
                     "attribute_class"    "mult_dmg_vs_buildings"
                     "value"                "0.29"
                 }
-                "voice pitch scale"
+                "weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_spread_scale"
 					"value"				".25"
@@ -29988,17 +29988,17 @@ Weapon by 'The One Of Wonders'"
 					"attribute_class"	"bleeding_duration"
 					"value"				"5"
 				}
-				"voice pitch scale"													
+				"weapon_stattrak_module_scale"													
 				{
 					"attribute_class"	"blast_dmg_to_self"
 					"value"				"0"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_dmgself_push_force"
 					"value"				"0.01"
 				}
-				"voice pitch scale"													
+				"weapon_stattrak_module_scale"													
 				{
 					"attribute_class"	"mult_dmg"
 					"value"				"0.05"
@@ -30008,7 +30008,7 @@ Weapon by 'The One Of Wonders'"
 					"attribute_class"	"override_projectile_type"
 					"value"				"2"
 				}	
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_postfiredelay"
 					"value" 			"19.0"
@@ -30090,17 +30090,17 @@ Weapon by: 'The One Of Wonders'"
 					"value"				"5"
 				}
 				// Backend stuff to disable wrench shenanigans
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_construction_value"
 					"value" 			"0"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_repair_value"
 					"value" 			"0"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"upgrade_rate_mod"
 					"value" 			"0"
@@ -30110,12 +30110,12 @@ Weapon by: 'The One Of Wonders'"
 					"attribute_class"	"mult_crit_chance"
 					"value"				"0"
 				}
-				"voice pitch scale"												
+				"weapon_stattrak_module_scale"												
 				{
 					"attribute_class"	"mult_single_wep_deploy_time"
 					"value"				"1.35"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_deploy_time"
 					"value"				"1.35"
@@ -30223,12 +30223,12 @@ Weapon by 'The One Of Wonders'"
 					"attribute_class"	"rocket_lifetime"
 					"value"				"0.00001"												
 				}
-				"voice pitch scale"													
+				"weapon_stattrak_module_scale"													
 				{
 					"attribute_class"	"blast_dmg_to_self"
 					"value"				"0"
 				}
-				"voice pitch scale"													
+				"weapon_stattrak_module_scale"													
 				{
 					"attribute_class"	"mult_dmg"
 					"value"				"0.05"
@@ -30238,12 +30238,12 @@ Weapon by 'The One Of Wonders'"
 					"attribute_class"	"override_projectile_type"
 					"value"				"2"
 				}	
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_postfiredelay"
 					"value" 			"19.0"
 				}
-				"voice pitch scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_dmgself_push_force"
 					"value"				"0.01"
@@ -30308,12 +30308,12 @@ Weapon by: 'The One Of Wonders'"
 					"attribute_class"	"add_civ_boost_override"
 					"value"				"111 1"
 				}
-				"voice pitch scale"													
+				"weapon_stattrak_module_scale"													
 				{
 					"attribute_class"	"mult_dmg"
 					"value"				"1.6"
 				}
-				"voice pitch scale"													
+				"weapon_stattrak_module_scale"													
 				{
 					"attribute_class"	"mult_postfiredelay"
 					"value"				"1.6"
