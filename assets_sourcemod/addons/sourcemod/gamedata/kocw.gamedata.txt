@@ -2,43 +2,58 @@
 {
     "tf2classic"
     {
+		"Addresses"
+		{
+			"CTFGameStats"
+			{
+				"linux"
+				{
+					"signature"		"CTFGameStats"
+				}
+			}
+		}
         "Offsets"
         {
             //player
         
+			"CBaseCombatCharacter::GiveAmmo"
+			{
+				"linux"		"473"
+			}
+		
 			"CTFPlayer::OnTakeDamage"
 			{
-				"linux"		"63"
+				"linux"		"64"
 			}
 			"CTFPlayer::TakeHealth"
 			{
-				"linux"		"65"
+				"linux"		"470"
 			}
 			"CTFPlayer::OnTakeDamageAlive"
 			{
-				"linux"		"274"
+				"linux"		"275"
 			}
 			"CTFPlayer::GetMaxHealth"
 			{
-				"linux"		"469"
+				"linux"		"472"
 			}
             "CTFPlayer::GetAttributeManager"
 			{
-				"linux"		"471"
+				"linux"		"474"
 			}
 			"CTFPlayer::GetAttributeContainer"
 			{
-				"linux"		"472"
+				"linux"		"475"
 			}
 			
 			"CTFPlayer::m_Shared"
 			{
-				"linux"		"4264"
+				"linux"		"4284"
 			}
 			
 			"CTFPlayerShared::m_pOuter" //pointer to player contained in CTFPlayerShared
 			{
-				"linux"		"1200"
+				"linux"		"1344"
 			}
             
             "CTFGameRules::GetCaptureValueForPlayer"
@@ -50,39 +65,31 @@
             
             "CBaseObject::StartBuilding"
             {
-                "linux"     "328"
+                "linux"     "329"
             }
             "CBaseObject::OnGoActive"
             {
-                "linux"     "340"
+                "linux"     "342"
             }
             "CBaseObject::CanBeUpgraded"
             {
-                "linux"     "345"
+                "linux"     "347"
             }
             "CBaseObject::StartUpgrading"
             {
-                "linux"     "346"
+                "linux"     "348"
             }
             "CBaseObject::FinishUpgrading"
             {
-                "linux"     "347"
+                "linux"     "349"
             }
             "CBaseObject::MakeCarriedObject"
             {
-                "linux"     "350"
+                "linux"     "353"
             }
             "CBaseObject::m_iGoalUpgradeLevel"
             {
                 "linux"     "2044"
-            }
-            "CObjSentrygun::m_flNextAttack"
-            {
-                "linux"     "2392"
-            }
-            "CObjSentrygun::m_iBaseTurnRate"
-            {
-                "linux"     "2404"
             }
             
             
@@ -90,23 +97,32 @@
             
 			"CTFWeaponBase::Holster"
 			{
-				"linux"		"261"
+				"linux"		"262"
 			}
 			"CTFWeaponBase::ItemPostFrame"
 			{
-				"linux"		"271"
+				"linux"		"272"
+			}
+			"CTFWeaponBase::ItemBusyFrame"
+			{
+				"linux"		"273"
+			}
+			"CTFWeaponBase::PrimaryAttack"
+			{
+				"linux"		"287"
 			}
 			"CTFWeaponBase::SecondaryAttack"
 			{
-				"linux"		"286"
+				"linux"		"288"
 			}
 			"CTFWeaponBase::GetFireRate"
 			{
-				"linux"		"295"
+				"linux"		"298"
 			}
-			"CWeaponMedigun::GetTargetRange"
+			
+			"CTFGrenadePipebombProjectile::ShouldExplodeOnEntity"
 			{
-				"linux"		"448"
+				"linux"		"242"
 			}
 			
 			"CAttributeManager::ApplyAttributeFloat"
@@ -118,11 +134,16 @@
 				"linux"		"4"
 			}
 			
+			"CBaseProjectile::m_bCollideWithTeammates"
+			{
+				"linux"		"1168"
+			}
+			
             //econ
             
 			"CEconEntity::GetAttributeManager"
 			{
-				"linux"		"225"
+				"linux"		"226"
 			}
 			"CEconEntity::m_Item" //pointer to CEconItemView on CEconEntity
 			{
@@ -133,6 +154,53 @@
 		"Functions"
 		{
 			//player
+			
+			"CBaseCombatCharacter::GiveAmmo"
+			{
+				"offset"		"CBaseCombatCharacter::GiveAmmo"
+				"hooktype"		"entity"
+				"callconv"		"thiscall"
+				"return"		"int"
+				"this"			"entity"
+				"arguments"
+				{
+					"amount"
+					{
+						"type"	"int"
+					}
+					"type"
+					{
+						"type"	"int"
+					}
+					"silent"
+					{
+						"type"	"bool"
+					}
+					"source"
+					{
+						"type"	"int"
+					}
+				}
+			}
+			
+			"CBaseCombatCharacter::SetAmmoCount"
+			{
+				"signature"		"CBaseCombatCharacter::SetAmmoCount"
+				"callconv"		"thiscall"
+				"return"		"void"
+				"this"			"entity"
+				"arguments"
+				{
+					"amount"
+					{
+						"type"	"int"
+					}
+					"type"
+					{
+						"type"	"int"
+					}
+				}
+			}
 			
 			"CTFPlayer::OnTakeDamage"
 			{
@@ -180,6 +248,14 @@
 					"flags"
 					{
 						"type"	"int"
+					}
+					"source"
+					{
+						"type"	"cbaseentity"
+					}
+					"critheal"
+					{
+						"type"	"bool"
 					}
 				}
 				
@@ -370,6 +446,14 @@
 				}
 			}
 			
+			"CTFGameMovement::CheckJumpButton"
+			{
+				"signature"	"CTFGameMovement::CheckJumpButton"
+				"callconv"	"thiscall"
+				"return"	"bool"
+				"this"		"address"
+			}
+			
             //buildings
             
             "CBaseObject::StartBuilding"
@@ -517,12 +601,28 @@
 				"return"		"void"
 				"this"			"entity"
 			}
+			"CTFWeaponBase::ItemBusyFrame"
+			{
+				"offset"		"CTFWeaponBase::ItemPostFrame"
+				"hooktype"		"entity"
+				"callconv"		"thiscall"
+				"return"		"void"
+				"this"			"entity"
+			}
             "CTFWeaponBase::GetFireRate"
 			{
 				"offset"		"CTFWeaponBase::GetFireRate"
 				"hooktype"		"entity"
 				"callconv"		"thiscall"
 				"return"		"float"
+				"this"			"entity"
+			}
+			"CTFWeaponBase::PrimaryAttack"
+			{
+				"offset"		"CTFWeaponBase::PrimaryAttack"
+				"hooktype"		"entity"
+				"callconv"		"thiscall"
+				"return"		"void"
 				"this"			"entity"
 			}
 			"CTFWeaponBase::SecondaryAttack"
@@ -616,9 +716,9 @@
 				"return"		"void"
 				"this"			"entity"
 			}
-			"CTFProjectile_Coil::RocketTouch"
+			"CTFBaseRocket::RocketTouch"
 			{
-				"signature"		"CTFProjectile_Coil::RocketTouch"
+				"signature"		"CTFBaseRocket::RocketTouch"
 				"callconv"		"thiscall"
 				"return"		"void"
 				"this"			"entity"
@@ -637,12 +737,91 @@
 				"return"		"void"
 				"this"			"entity"
 			}
-            
+			
+			"CTraceFilterSimple::ShouldHitEntity"
+			{
+				"signature"		"CTraceFilterSimple::ShouldHitEntity"
+				"callconv"		"cdecl"
+				"return"		"bool"
+				"arguments"
+				{
+					"fuck"
+					{
+						"type"	"int"
+					}
+					"toucher"
+					{
+						"type"	"cbaseentity"
+					}
+					"fuck2"
+					{
+						"type"	"int"
+					}
+				}
+			}
+			
+			"CTFGrenadePipebombProjectile::ShouldExplodeOnEntity"
+			{
+				"offset"		"CTFGrenadePipebombProjectile::ShouldExplodeOnEntity"
+				"hooktype"		"entity"
+				"callconv"		"thiscall"
+				"return"		"bool"
+				"this"			"entity"
+				"arguments"
+				{
+					"touched"
+					{
+						"type"	"cbaseentity"
+					}
+				}
+			}
+			
+			"CTFFlameEntity::OnCollide"
+			{
+				"signature"		"CTFFlameEntity::OnCollide"
+				"callconv"		"thiscall"
+				"this"			"address"
+				"return"		"void"
+				"arguments"
+				{
+					"touched"
+					{
+						"type"	"cbaseentity"
+					}
+				}
+			}
+			
+			"CTFFlameEntity::OnCollideWithTeammate"
+			{
+				"signature"		"CTFFlameEntity::OnCollideWithTeammate"
+				"callconv"		"thiscall"
+				"this"			"address"
+				"return"		"void"
+				"arguments"
+				{
+					"touched"
+					{
+						"type"	"cbaseentity"
+					}
+				}
+			}
 		}
 		
 		"Signatures"
 		{
+			"fuckme"
+			{
+				"library"	"server"
+				"linux"		"@_ZN10CUtlVectorI7CHandleI11CBaseEntityE10CUtlMemoryIS2_iEE12InsertBeforeEiRKS2_"
+			}
+		
             //player
+			"CBaseCombatCharacter::SetAmmoCount"
+			{
+				"library"	"server"
+				"linux"		"@_ZN20CBaseCombatCharacter12SetAmmoCountEii"
+			}
+			
             "CTFPlayer::GetEntityForLoadoutSlot"
 			{
 				"library"	"server"
@@ -682,7 +861,7 @@
 			"CTFPlayerShared::Heal"
 			{
 				"library"	"server"
-				"linux"		"@_ZN15CTFPlayerShared4HealEP9CTFPlayerfP11CBaseObjectb"
+				"linux"		"@_ZN15CTFPlayerShared4HealEP9CTFPlayerfP11CBaseObjectbb"
 			}
 			"CTFPlayerShared::StopHealing"
 			{
@@ -715,32 +894,22 @@
 				"linux"		"@_ZN15CTFPlayerShared24RecalculateChargeEffectsEb"
 			}
             
-            //buildings
-            
-            "CBaseObject::GetConstructionMultiplier"
+			"CTFGameMovement::CheckJumpButton"
 			{
-				"library"	"server"
-				"linux"		"@_ZN11CBaseObject25GetConstructionMultiplierEv"
+				"linux"		"@_ZN15CTFGameMovement15CheckJumpButtonEv"
 			}
+			
+            //buildings
+
             "CBaseObject::DestroyScreens"
             {
                 "library"   "server"
                 "linux"     "@_ZN11CBaseObject14DestroyScreensEv"
             }
-			"CObjectSentrygun::Attack"
-			{
-				"library"	"server"
-				"linux"		"@_ZN16CObjectSentrygun6AttackEv"
-			}
 			"CObjectDispenser::GetHealRate"
 			{
 				"library"	"server"
 				"linux"		"@_ZN16CObjectDispenser11GetHealRateEv"
-			}
-			"CObjectTeleporter::TeleporterDoJump"
-			{
-				"library"	"server"
-				"linux"		"@_ZN17CObjectTeleporter16TeleporterDoJumpEP9CTFPlayer"
 			}
             
             //weapons
@@ -748,7 +917,13 @@
             "CTFWeaponBase::ApplyOnHitAttributes"
 			{
 				"library"	"server"
-				"linux"		"@_ZN13CTFWeaponBase20ApplyOnHitAttributesEP11CBaseEntityP9CTFPlayerRK15CTakeDamageInfo"
+				"linux"		"@_ZN13CTFWeaponBase20ApplyOnHitAttributesEP11CBaseEntityS1_RK15CTakeDamageInfo"
+			}
+			
+			"CTFWeaponBase::CalcAttackIsCritical"
+			{
+				"library"	"server"
+				"linux"		"@_ZN13CTFWeaponBase20CalcIsAttackCriticalEv"
 			}
 			
 			"CWeaponMedigun::AllowedToHealTarget"
@@ -764,7 +939,7 @@
 			"CWeaponMedigun::GetHealRate"
 			{
 				"library"	"server"
-				"linux"		"@_ZN14CWeaponMedigun11GetHealRateEv"
+				"linux"		"@_ZN14CWeaponMedigun11GetHealRateEb"
 			}
             
 			"CTFCoilGun::GetProjectileSpeed"
@@ -790,15 +965,37 @@
 				"library"	"server"
 				"linux"		"@_ZN26CTFProjectile_SentryRocket5SpawnEv"
 			}
-            "CTFProjectile_Coil::RocketTouch"
+            "CTFBaseRocket::RocketTouch"
 			{
 				"library"	"server"
-				"linux"		"@_ZN18CTFProjectile_Coil11RocketTouchEP11CBaseEntity"
+				"linux"		"@_ZN13CTFBaseRocket11RocketTouchEP11CBaseEntity"
 			}
 			"CBaseProjectile::ResetCollideWithTeammates"
 			{
 				"library"	"server"
 				"linux"		"@_ZN15CBaseProjectile25ResetCollideWithTeammatesEv"
+			}
+			
+			"CTFGrenadeStickybombProjectile::Create"
+			{
+				"library"	"server"
+				"linux"		"@_ZN30CTFGrenadeStickybombProjectile6CreateERK6VectorRK6QAngleS2_S2_P11CBaseEntityS7_"
+			}
+			"CTFGrenadePipebombProjectile::Create"
+			{
+				"library"	"server"
+				"linux"		"@_ZN28CTFGrenadePipebombProjectile6CreateERK6VectorRK6QAngleS2_S2_P11CBaseEntityS7_i"
+			}
+			
+			"CTFFlameEntity::OnCollide"
+			{
+				"library"	"server"
+				"linux"		"@_ZN14CTFFlameEntity9OnCollideEP11CBaseEntity"
+			}
+			"CTFFlameEntity::OnCollideWithTeammate"
+			{
+				"library"	"server"
+				"linux"		"@_ZN14CTFFlameEntity21OnCollideWithTeammateEP9CTFPlayer"
 			}
 			
             //econ
@@ -827,6 +1024,11 @@
 				"library"	"server"
 				"linux"		"@_ZN11CBaseEntity12SetNextThinkEfPKc"
 			}
+			"CBaseEntity::SetCollisionGroup"
+			{
+				"library"	"server"
+				"linux"		"@_ZN11CBaseEntity17SetCollisionGroupEi"
+			}
 			
 			"CGlobalEntityList::FindEntityInSphere"
 			{
@@ -843,6 +1045,23 @@
 			{
 				"library"	"server"
 				"linux"		"@_ZN12CTFGameRules29ApplyOnDamageAliveModifyRulesERK15CTakeDamageInfoP11CBaseEntityRNS_20DamageModifyExtras_tE"
+			}
+			
+			"CTraceFilterSimple::ShouldHitEntity"
+			{
+				"library"	"server"
+				"linux"		"@_ZN18CTraceFilterSimple15ShouldHitEntityEP13IHandleEntityi"
+			}
+			
+			"CTFGameStats"
+			{
+				"library" "server"
+				"linux"   "@CTF_GameStats"
+			}
+			"CTFGameStats::Event_PlayerHealedOther"
+			{
+				"library"	"server"
+				"linux"		"@_ZN12CTFGameStats23Event_PlayerHealedOtherEP9CTFPlayerf"
 			}
 		}
     }
