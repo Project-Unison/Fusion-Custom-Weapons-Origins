@@ -2014,109 +2014,11 @@ Weapon by: 'Reagy'"
 //--------------------------
 // The Big Iron
 // V5.3.2 Reworked, slowed down fire rate, increased accuracy, increased damage, removed deploy speed bonus
+// FCWO V2.1.0 Removed due to conflict with Scout's Big Iron
 //--------------------------
 //--------------------------
 		"7031"																			
         {
-            "name"						"TF_WEAPON_BIG_IRON_ENGI"
-            "item_class"			    "tf_weapon_smg"
-			"bucket"					"0"														
-			"bucket_position"			"0"
-			
-			"image_inventory_size_w"	"128"
-			"image_inventory_size_h"	"82"
-		
-			"item_slot"                 "primary"
-			"anim_slot"                 "secondary"
-            "show_in_armory"			"1"
-
-			"item_quality"				"rarity2"
-
-			"propername"				"1"
-            "item_name"					"Big Iron"
-			"item_type_name"			"#TF_Weapon_Revolver"
-			"item_description"			"
-Bigger iron on his hip
-
-Model by: 'Aftroid'
-Animations by: 'Raptor Dan'
-Cosmetics by: 'Big Bob' 'Tabby'
-Weapon by: 'Reagy'"
-			"item_logname"				"bigiron"
-			"item_iconname"				"bigiron"
-			"image_inventory"			"backpack/weapons/w_models/w_bigiron"
-			"model_world"				"models/weapons/custom/w_models/w_bigiron_engineer.mdl"
-			"model_player"				"models/weapons/custom/v_models/v_bigiron_v2.mdl"
-			"extra_wearable"			"models/workshop/player/items/engineer/quickdraw_shawl.mdl"
-			"attach_to_hands"			"2"
-			"used_by_classes"
-			{
-				"engineer"				"1"
-			}
-			"attributes"
-			{
-				"weapon_stattrak_module_scale"												
-				{
-					"attribute_class"	"mult_dmg"
-					"value"				"7.0"
-				}
-				"weapon_stattrak_module_scale"											
-				{
-					"attribute_class"	"mult_spread_scale"
-					"value"				"2.5"
-				}	
-				"weapon_stattrak_module_scale"											
-				{
-					"attribute_class"	"mult_postfiredelay"
-					"value"				"7.5"
-				}	
-				"weapon_stattrak_module_scale"											
-				{
-					"attribute_class"	"mult_maxammo_primary"
-					"value"				"0.2"
-				}	
-				"weapon_stattrak_module_scale"												
-				{
-					"attribute_class"	"mult_clipsize"
-					"value"				"0.2"
-				}
-				"punch angle mod add hidden"
-				{
-					"attribute_class"	"punch_angle_mod"
-					"value"				"10.0"
-				}
-				"punch angle mod add hidden"
-				{
-					"attribute_class"	"punch_angle_is_constant"
-					"value"				"1"
-				}
-                "crit mod disabled"
-				{
-					"attribute_class"	"mult_crit_chance"
-					"value"				"0"
-				}
-                "mod use custom ammo type" // primary
-				{
-					"attribute_class"	"mod_use_custom_ammo_type"
-					"value" 			"1"
-				}				
-			}
-			"visuals"
-			{
-				"sound_single_shot"		"Weapon_BigIron.Single"
-				"sound_burst"			"Weapon_BigIron.SingleCrit"
-				"sound_reload"			"Weapon_Revolver.WorldReload"
-				"muzzle_flash"			"muzzle_scattergun"
-				"tracer_effect"			"bullet_scattergun_tracer01"
-				"animation_replacement"
-				{
-					"ACT_MP_ATTACK_STAND_SECONDARY"				"ACT_MP_ATTACK_STAND_PRIMARY"
-					"ACT_MP_ATTACK_CROUCH_SECONDARY"			"ACT_MP_ATTACK_CROUCH_PRIMARY"
-					"ACT_MP_ATTACK_SWIM_SECONDARY"				"ACT_MP_ATTACK_SWIM_PRIMARY"
-				}
-			}
-			"mouse_pressed_sound"		"#ui/item_light_gun_pickup.wav"
-			"drop_sound"				"#ui/item_light_gun_drop.wav"
         }
 //--------------------------
 //--------------------------
@@ -3101,9 +3003,10 @@ Weapon by: 'Zadrave'"
 		}
 //-------------------------------------
 //-------------------------------------
-// HL1 Spas12
+// HL1 Spas12 (The Thumper)
 // V5.3.5 New weapon, all class
 // v5.3.6 Adjusted damage profiles, playtesting found to be far weaker than stock shotgun at most played ranges, bot testing only goes so far yet again...
+// FCWO V2.1.0 Renamed to 'The Thumper' and balance taken from Creators.TF
 //-------------------------------------
 //-------------------------------------	
 		"7063"																			
@@ -3117,14 +3020,14 @@ Weapon by: 'Zadrave'"
 			"item_quality"				"rarity2"
 
 			"propername"				"0"												
-			"item_name"					"SPAS-12" 									
+			"item_name"					"The Thumper" 									
 			"item_type_name"			"#TF_Weapon_Shotgun" 												
 			"item_description"			"
 Found this in the Office Complex
 Not sure how it ended up there...
 
 Model by: 'Sparkwire' 'Svdl'
-Weapon by: 'Reagy'"														
+Weapon from: 'Creators.TF'"														
 			"item_logname"				"spas_soldier"
 			"item_iconname"				"spas"											
 			"image_inventory"			"backpack/weapons/w_models/w_spas" 						
@@ -3138,10 +3041,14 @@ Weapon by: 'Reagy'"
 			"static_attrs"
 			{
 				"min_viewmodel_offset"					"5 -2 -10"
-				"clip size penalty hidden"				"1.4"
-				"damage bonus hidden"					"0.85"
-				"fire rate bonus hidden"				"0.9"
-				"crit mod disabled"                     "0"
+				"damage bonus"							"1.9"
+				"maxammo secondary increased"			"1.5"
+				"clip size bonus"						"1.3"
+				"weapon spread bonus"					"0.7"
+				"fire rate penalty"						"0.8"
+				"bullets per shot penalty"				"0.5"
+				"reload time increased"					"1.13"
+				"deploy time increased"					"1.15"
 			}
 			"visuals"
 			{
@@ -3163,14 +3070,14 @@ Weapon by: 'Reagy'"
 			"item_quality"				"rarity2"
 
 			"propername"				"0"												
-			"item_name"					"SPAS-12" 									
+			"item_name"					"The Thumper" 									
 			"item_type_name"			"#TF_Weapon_Shotgun" 												
 			"item_description"			"
 Found this in the Office Complex
 Not sure how it ended up there...
 
 Model by: 'Sparkwire' 'Svdl'
-Weapon by: 'Reagy'"													
+Weapon from: 'Creators.TF'"													
 			"item_logname"				"spas_pyro"
 			"item_iconname"				"spas"											
 			"image_inventory"			"backpack/weapons/w_models/w_spas" 						
@@ -3184,10 +3091,14 @@ Weapon by: 'Reagy'"
 			"static_attrs"
 			{
 				"min_viewmodel_offset"					"5 -2 -10"
-				"clip size penalty hidden"				"1.4"
-				"damage bonus hidden"					"0.85"
-				"fire rate bonus hidden"				"0.9"
-				"crit mod disabled"                     "0"
+				"damage bonus"							"1.9"
+				"maxammo secondary increased"			"1.5"
+				"clip size bonus"						"1.3"
+				"weapon spread bonus"					"0.7"
+				"fire rate penalty"						"0.8"
+				"bullets per shot penalty"				"0.5"
+				"reload time increased"					"1.13"
+				"deploy time increased"					"1.15"
 			}
 			"visuals"
 			{
@@ -3209,14 +3120,14 @@ Weapon by: 'Reagy'"
 			"item_quality"				"rarity2"
 
 			"propername"				"0"												
-			"item_name"					"SPAS-12" 									
+			"item_name"					"The Thumper" 									
 			"item_type_name"			"#TF_Weapon_Shotgun" 												
 			"item_description"			"
 Found this in the Office Complex
 Not sure how it ended up there...
 
 Model by: 'Sparkwire' 'Svdl'
-Weapon by: 'Reagy'"													
+Weapon from: 'Creators.TF'"													
 			"item_logname"				"spas_heavy"
 			"item_iconname"				"spas"											
 			"image_inventory"			"backpack/weapons/w_models/w_spas" 						
@@ -3230,10 +3141,14 @@ Weapon by: 'Reagy'"
 			"static_attrs"
 			{
 				"min_viewmodel_offset"					"5 -2 -10"
-				"clip size penalty hidden"				"1.4"
-				"damage bonus hidden"					"0.85"
-				"fire rate bonus hidden"				"0.9"
-				"crit mod disabled"                     "0"
+				"damage bonus"							"1.9"
+				"maxammo secondary increased"			"1.5"
+				"clip size bonus"						"1.3"
+				"weapon spread bonus"					"0.7"
+				"fire rate penalty"						"0.8"
+				"bullets per shot penalty"				"0.5"
+				"reload time increased"					"1.13"
+				"deploy time increased"					"1.15"
 			}
 			"visuals"
 			{
@@ -3255,7 +3170,7 @@ Weapon by: 'Reagy'"
 			"item_quality"				"rarity2"
 
 			"propername"				"0"												
-			"item_name"					"SPAS-12" 									
+			"item_name"					"The Thumper" 									
 			"item_type_name"			"#TF_Weapon_Shotgun" 												
 			"item_description"			"
 Found this in the Office Complex
@@ -3263,7 +3178,7 @@ Not sure how it ended up there...
 
 Model by: 'Sparkwire' 'Svdl'
 Cosmetics by: 'NeoDement' 'xbox 720' 'BE NICE 2 ME'
-Weapon by: 'Reagy'"														
+Weapon from: 'Creators.TF'"														
 			"item_logname"				"spas_engineer"
 			"item_iconname"				"spas"											
 			"image_inventory"			"backpack/weapons/w_models/w_spas" 						
@@ -3278,10 +3193,14 @@ Weapon by: 'Reagy'"
 			"static_attrs"
 			{
 				"min_viewmodel_offset"					"5 -2 -10"
-				"clip size penalty hidden"				"1.4"
-				"damage bonus hidden"					"0.95"
-				"fire rate bonus hidden"				"0.9"
-				"crit mod disabled"                     "0"
+				"damage bonus"							"1.9"
+				"maxammo primary increased"				"1.5"
+				"clip size bonus"						"1.3"
+				"weapon spread bonus"					"0.7"
+				"fire rate penalty"						"0.8"
+				"bullets per shot penalty"				"0.5"
+				"reload time increased"					"1.13"
+				"deploy time increased"					"1.15"
 			}
 			"visuals"
 			{
@@ -3300,191 +3219,16 @@ Weapon by: 'Reagy'"
 // V5.3.7r1 Fixed slot bug, oops
 		"7067"																			
 		{
-			"name"						"TF_WEAPON_SPAS12_SCOUT" 									
-			"prefab"					"weapon_shotgun" 
-			"item_class"         		"tf_weapon_shotgun"			
-			"show_in_armory"			"1"													
-			"item_slot"					"primary"
-			"anim_slot"					"primary"				
-
-			"item_quality"				"rarity2"
-
-			"propername"				"0"												
-			"item_name"					"SPAS-12" 									
-			"item_type_name"			"#TF_Weapon_Shotgun" 												
-			"item_description"			"
-Found this in the Office Complex
-Not sure how it ended up there...
-
-Model by: 'Sparkwire' 'Svdl'
-Weapon by: 'Reagy'"													
-			"item_logname"				"spas_scout"
-			"item_iconname"				"spas"											
-			"image_inventory"			"backpack/weapons/w_models/w_spas" 						
-			"model_world"				"models/weapons/custom/w_models/w_spas_scout.mdl"					
-			"model_player"				"models/weapons/custom/v_models/v_spas_pyro.mdl"			
-			"attach_to_hands"			"2"													
-			"used_by_classes"
-			{			
-				"scout"					"1"
-			}
-			"static_attrs"
-			{
-				"min_viewmodel_offset"					"5 -2 -10"
-				"clip size penalty hidden"				"1.4"
-				"damage bonus hidden"					"0.85"
-				"fire rate bonus hidden"				"0.9"
-				"crit mod disabled"                     "0"
-			}
-			"visuals"
-			{
-				"sound_single_shot"		"Weapon_Spas.Single"
-				"sound_burst"			"Weapon_Spas.SingleCrit"
-				"reload"				"Weapon_Spas.WorldReload"
-			}
-			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
-			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
 		}		
 		"7068"																			
 		{
-			"name"						"TF_WEAPON_SPAS12_DEMO" 									
-			"prefab"					"weapon_shotgun" 
-			"item_class"         		"tf_weapon_shotgun"			
-			"show_in_armory"			"0"													
-			"item_slot"					"primary"
-			"anim_slot"					"secondary"			
-
-			"item_quality"				"rarity2"
-
-			"propername"				"0"												
-			"item_name"					"SPAS-12" 									
-			"item_type_name"			"#TF_Weapon_Shotgun" 												
-			"item_description"			"
-Found this in the Office Complex
-Not sure how it ended up there...
-
-Model by: 'Sparkwire' 'Svdl'
-Weapon by: 'Reagy'"														
-			"item_logname"				"spas_demo"
-			"item_iconname"				"spas"											
-			"image_inventory"			"backpack/weapons/w_models/w_spas" 						
-			"model_world"				"models/weapons/custom/w_models/w_spas_demo.mdl"					
-			"model_player"				"models/weapons/custom/v_models/v_spas_pyro.mdl"			
-			"attach_to_hands"			"2"													
-			"used_by_classes"
-			{			
-				"demoman"					"1"
-			}
-			"static_attrs"
-			{
-				"min_viewmodel_offset"					"5 -2 -10"
-				"clip size penalty hidden"				"1.4"
-				"damage bonus hidden"					"0.85"
-				"fire rate bonus hidden"				"0.9"
-			}
-			"visuals"
-			{
-				"sound_single_shot"		"Weapon_Spas.Single"
-				"sound_burst"			"Weapon_Spas.SingleCrit"
-				"reload"				"Weapon_Spas.WorldReload"
-			}
-			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
-			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
 		}
 // 5.3.6 Added the tie...
 		"7069"																			
 		{
-			"name"						"TF_WEAPON_SPAS12_MEDIC" 									
-			"prefab"					"weapon_shotgun" 
-			"item_class"         		"tf_weapon_shotgun"			
-			"show_in_armory"			"1"													
-			"item_slot"					"primary"											
-
-			"item_quality"				"rarity2"
-
-			"propername"				"0"												
-			"item_name"					"SPAS-12" 									
-			"item_type_name"			"#TF_Weapon_Shotgun" 												
-			"item_description"			"
-Found this in the Office Complex
-Not sure how it ended up there...
-
-Model by: 'Sparkwire' 'Svdl'
-Weapon by: 'Reagy'"														
-			"item_logname"				"spas_medic"
-			"item_iconname"				"spas"											
-			"image_inventory"			"backpack/weapons/w_models/w_spas" 						
-			"model_world"				"models/weapons/custom/w_models/w_spas_medic.mdl"					
-			"model_player"				"models/weapons/custom/v_models/v_spas_pyro.mdl"
-			"extra_wearable"			"models/player/items/custom/medic/the_tie_new.mdl"			
-			"attach_to_hands"			"2"													
-			"used_by_classes"
-			{		
-				"medic"				"1"
-			}
-			"static_attrs"
-			{
-				"min_viewmodel_offset"					"5 -2 -10"
-				"clip size penalty hidden"				"1.4"
-				"damage bonus hidden"					"0.75"
-				"fire rate bonus hidden"				"0.9"
-				"crit mod disabled"                     "0"
-			}
-			"visuals"
-			{
-				"sound_single_shot"		"Weapon_Spas.Single"
-				"sound_burst"			"Weapon_Spas.SingleCrit"
-				"reload"				"Weapon_Spas.WorldReload"
-			}
-			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
-			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
 		}
 		"7080"																			
 		{
-			"name"						"TF_WEAPON_SPAS12_SNIPER" 									
-			"prefab"					"weapon_shotgun" 
-			"item_class"         		"tf_weapon_shotgun_pyro"			
-			"show_in_armory"			"1"													
-			"item_slot"					"secondary"
-			"anim_slot"					"primary"											
-
-			"item_quality"				"rarity2"
-
-			"propername"				"0"												
-			"item_name"					"SPAS-12" 									
-			"item_type_name"			"#TF_Weapon_Shotgun" 												
-			"item_description"			"
-Found this in the Office Complex
-Not sure how it ended up there...
-
-Model by: 'Sparkwire' 'Svdl'
-Weapon by: 'Reagy'"														
-			"item_logname"				"spas_sniper"
-			"item_iconname"				"spas"											
-			"image_inventory"			"backpack/weapons/w_models/w_spas" 						
-			"model_world"				"models/weapons/custom/w_models/w_spas_sniper.mdl"					
-			"model_player"				"models/weapons/custom/v_models/v_spas_pyro.mdl"			
-			"attach_to_hands"			"2"													
-			"used_by_classes"
-			{		
-				"sniper"				"1"
-			}
-			"static_attrs"
-			{
-				"min_viewmodel_offset"					"5 -2 -10"
-				"clip size penalty hidden"				"1.4"
-				"damage bonus hidden"					"0.85"
-				"fire rate bonus hidden"				"0.9"
-				"crit mod disabled"                     "0"
-			}
-			"visuals"
-			{
-				"sound_single_shot"		"Weapon_Spas.Single"
-				"sound_burst"			"Weapon_Spas.SingleCrit"
-				"reload"				"Weapon_Spas.WorldReload"
-			}
-			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
-			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
 		}
 		"7081"																			
 		{
@@ -3492,144 +3236,16 @@ Weapon by: 'Reagy'"
 		}
 		"7082"																			
 		{
-			"name"						"TF_WEAPON_SPAS12_CIV" 									
-			"prefab"                    "weapon_umbrella"
-			"item_class"         		"tf_weapon_shotgun"			
-			"show_in_armory"			"1"													
-			"item_slot"					"melee"			
-
-			"item_quality"				"rarity2"
-
-			"propername"				"0"												
-			"item_name"					"SPAS-12" 									
-			"item_type_name"			"#TF_Weapon_Shotgun" 												
-			"item_description"			"Civilian cannot handle firearms effectively
-
-Found this in the Office Complex
-Not sure how it ended up there...
-
-Model by: 'Sparkwire' 'Svdl'
-Cosmetic by: 'Suomimies55'
-Weapon by: 'Reagy'"														
-			"item_logname"				"spas_civ"
-			"item_iconname"				"spas"											
-			"image_inventory"			"backpack/weapons/w_models/w_spas" 						
-			"model_world"				"models/weapons/custom/w_models/w_spas_civ.mdl"					
-			"model_player"				"models/weapons/custom/v_models/v_spas_pyro.mdl"
-			"extra_wearable"			"models/player/items/civ_bill.mdl"			
-			"attach_to_hands"			"2"													
-			"used_by_classes"
-			{		
-				"civilian"				"1"
-			}
-			"static_attrs"
-			{
-				"class select override vcd"				"taunt01"
-				"min_viewmodel_offset"					"5 -2 -10"
-				"clip size penalty hidden"				"1.4"
-				"damage bonus hidden"					"0.75"
-				"fire rate penalty"						"1.2"
-				"Reload time increased"					"1.1"
-				"crit mod disabled"                     "0"
-			}
-			"visuals"
-			{
-				"animation_replacement"
-				{
-					"ACT_MP_ATTACK_STAND_MELEE"					"ACT_MP_GESTURE_FLINCH_CHEST"
-					"ACT_MP_ATTACK_CROUCH_MELEE"				"ACT_MP_GESTURE_FLINCH_CHEST"
-					"ACT_MP_ATTACK_SWIM_MELEE"					"ACT_MP_GESTURE_FLINCH_CHEST"
-				}
-				"sound_single_shot"		"Weapon_Spas.Single"
-				"sound_burst"			"Weapon_Spas.SingleCrit"
-				"reload"				"Weapon_Spas.WorldReload"
-			}
-			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
-			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
 		}
 //-------------------------------------
 //-------------------------------------
 // Express Coffee
 // V5.3.5 New weapon
+// FCWO V2.1.0 Removed due to conflict with Fred's Fight Starters Coffee
 //-------------------------------------
 //-------------------------------------	
 		"7083"			
 		{
-			"name"						"TF_WEAPON_COFFEE"
-			"item_class"				"tf_weapon_lunchbox"							
-			"show_in_armory"			"1"
-			"item_slot"					"secondary"
-			"anim_slot"					"melee"
-
-			"item_quality"				"rarity2"
-
-			"image_inventory_size_w"	"128"
-			"image_inventory_size_h"	"82"
-											
-			"item_name"					"Express Coffee"
-			"item_type_name"			"#TF_Weapon_Lunchbox"
-			"item_description"			"Drink to gain up to 36 health.
-
-Who ate all the donuts?
-
-Model by: 'ZombiePlasticClock' 'NassimO'
-Item by: 'Reagy'"
-			"image_inventory"			"backpack/weapons/w_models/w_caffeine"
-			"model_world"				"models/weapons/custom/c_models/c_caffeine.mdl"
-			"model_player"				"models/weapons/custom/v_models/v_caffeine.mdl"		
-			"attach_to_hands"			"2"
-			"used_by_classes"
-			{
-				"scout"				"1"
-			}
-			"static_attrs"
-			{
-				"min_viewmodel_offset"					"0 0 -5"
-			}
-			"attributes"
-			{
-			    "Coffee Cond on Eat"
-				{
-					"attribute_class"	"DISPLAY_ONLY"						
-					"value"				"1"
-				}
-				"Coffee Penalty"
-				{
-					"attribute_class"	"DISPLAY_ONLY"						
-					"value"				"1"
-				}
-				"lunchbox add condition on eat"
-				{
-					"attribute_class"	"lunchbox_addcond"						
-					"value"				"32 5"
-				}
-				"weapon_stattrak_module_scale"
-				{
-					"attribute_class"	"lunchbox_healing_scale"						
-					"value"				"0.3"
-				}
-				"custom lunchbox throwable model"
-				{
-					"attribute_class"	"custom_lunchbox_throwable_model"
-					"value"				"models/items/plate_caffeine.mdl"	
-				}
-				"custom lunchbox throwable type"
-				{
-					"attribute_class"	"custom_lunchbox_throwable_type"						
-					"value"				"1"
-				}
-			}
-			"visuals"
-			{
-				"animation_replacement"															// These are a much more neutral position to hold stuff from than melee - so we'll use that!
-				{
-					"ACT_MP_ATTACK_STAND_SECONDARY"				"ACT_MP_ATTACK_STAND_MELEE"
-					"ACT_MP_ATTACK_CROUCH_SECONDARY"			"ACT_MP_ATTACK_CROUCH_MELEE"
-					"ACT_MP_ATTACK_SWIM_SECONDARY"				"ACT_MP_ATTACK_SWIM_MELEE"
-				}
-			}
-			"mouse_pressed_sound"		"#ui/item_cardboard_pickup.wav"
-			"drop_sound"				"#ui/item_cardboard_drop.wav"
 		}
 //-------------------------------------
 //-------------------------------------
@@ -6404,82 +6020,6 @@ Name by: 'The One of Wonders'"
 // Would anyone notice if I said I actually spent almost an hour putting this thing's W_ model together...? no?
 		"8059"
 		{
-		    "name"						"TF_WEAPON_INQUISITOR"
-            "prefab"                    "weapon_umbrella"
-			"item_class"				"tf_weapon_pistol"
-            "show_in_armory"			"1"
-			"anim_slot"                 "secondary"
-			
-			"image_inventory_size_w"	"128"
-			"image_inventory_size_h"	"82"
-
-//			"propername"				"1"
-			"item_quality"				"rarity2"
-			"item_name"					"Inquisitor"										
-			"item_type_name"			"#TF_Weapon_Revolver"
-			"item_description"			"Civilian cannot handle firearms effectively
-
-Won't you look at this marvelous beauty of a gun! I'm almost afraid to damage it! 
-
-Model by: 'Colteh, Rev'
-Weapon by: 'The One Of Wonders'"
-			"item_logname"				"civ_inquisitor"
-			"item_iconname"				"civ_inquisitor"
-			"image_inventory"			"backpack/weapons/c_models/c_inquisitor/c_inquisitor"
-			"model_world"				"models/weapons/w_models/w_inquisitor_civilian.mdl"				
-			"model_player"				"models/weapons/v_models/v_inquisitor_civilian.mdl"		
-			"extra_wearable"			"models/hats/civilian_magician/civilian_magician_complete.mdl"			
-			"attach_to_hands"			"2"
-			"used_by_classes"
-			{
-				"civilian"				"1"
-			}
-            "static_attrs"																		
-            {
-				"damage bonus hidden"					"1.785"									
-				"clip size penalty hidden"				"0.5"
-				"fire rate penalty hidden"				"5.0"									
-				"hidden secondary max ammo penalty"		"0.06"
-				"always draw tracer"					"1"
-				"class select override vcd"				"taunt01"
-			}
-            "attributes"																		
-            {
-				"revolver use hit locations"
-				{
-					"attribute_class"	"can_headshot"											
-					"value"				"1"
-				}																			
-		        "weapon_stattrak_module_scale"
-				{
-					"attribute_class"	"mult_reload_time"
-					"value" 			"1.20"
-				}
-				"punch angle mod add hidden"
-				{
-					"attribute_class"	"punch_angle_mod"
-					"value" 			"5.00"
-				}
-				"punch angle is constant"
-				{
-					"attribute_class"	"punch_angle_is_constant"
-					"value" 			"1"
-				}
-				"crit mod disabled"
-				{
-					"attribute_class"	"mult_crit_chance"
-					"value"				"0"
-				}
-			}
-			"visuals"
-			{
-				"sound_single_shot"		"Weapon_JudgeDeath.Shoot"
-				"sound_burst"			"Weapon_JudgeDeath.ShootCrit"
-				"sound_reload"			"Weapon_Revolver.WorldReload"
-				"tracer_effect"			"bullet_scattergun_tracer01"
-			}
-			"mouse_pressed_sound"		"#ui/item_light_gun_pickup.wav"
-			"drop_sound"				"#ui/item_light_gun_drop.wav"
 		}
 // V5.3.3 New weapon, much like the Balisong except applies to civ only, designed by Zadrave
 		"8069"
@@ -6609,13 +6149,12 @@ Weapon by: 'Reagy'"
 			"item_quality"				"rarity2"
 
 			"propername"				"1"
-			"item_name"					"Elimination Imperative"
+			"item_name"					"Magnum Opus"
 			"item_type_name"			"Magnum Pistol"
 			"item_description"			"
 Kicks like a mule, kills my enemies harder!
 
-Model by: 'DeRosaJ'
-Weapon by: 'The One Of Wonders'"
+Model by: 'DeRosaJ'"
 			"item_logname"				"supermag_scout"
 			"item_iconname"				"supermag_scout"
 			"image_inventory"			"backpack/weapons/c_models/c_supermagnum_scout/c_supermagnum_scout"
@@ -6632,15 +6171,20 @@ Weapon by: 'The One Of Wonders'"
 			}		
 			"attributes"
 			{
-				"weapon_stattrak_module_scale"
+				"damage bonus"
 				{
 					"attribute_class"	"mult_dmg"
 					"value"				"1.2"
 				}
-				"strange restriction type 1"
+				"fire rate penalty"
 				{
-					"attribute_class"	"mult_spread_scale"
-					"value"				"0.04"
+					"attribute_class"	"DISPLAY_ONLY"
+					"value"				"1.15"
+				}
+				"reload time increased"
+				{
+					"attribute_class"	"mult_reload_time"
+					"value" 			"1.2"
 				}
 				"weapon_stattrak_module_scale"
 				{
@@ -6650,27 +6194,17 @@ Weapon by: 'The One Of Wonders'"
 				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_postfiredelay"
-					"value"				"0.4"
+					"value"				"0.35"
 				}
 				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_maxammo_primary"
 					"value" 			"1.16666666667"
 				}
-				"weapon_stattrak_module_scale"
-				{
-					"attribute_class"	"mult_reload_time"
-					"value" 			"1.2"
-				}
 				"strange restriction type 1"
 				{
 					"attribute_class"	"unimplemented_mod_sniper_no_charge"
 					"value"				"1"
-				}
-				"crit mod disabled"
-				{
-					"attribute_class"	"mult_crit_chance"
-					"value"				"0"
 				}
 				"punch angle mod add hidden"
 				{
@@ -8348,7 +7882,7 @@ Weapon by: 'The One Of Wonders'"
 		"9091"
 		{
 			"name"						"TF_WEAPON_SCOUT_THROWABLE"
-			"item_class"				"tf_weapon_grenade_mirv"							
+			"item_class"				"tf_weapon_throwable"							
 			"show_in_armory"			"1"
 			
 			"item_quality"				"rarity3"
@@ -8367,10 +7901,9 @@ Weapon by: 'The One Of Wonders'"
 Ammo pickups do not give ammo
 Recharges over time
 
-iS ThAt A 「J0J0」 ReEeReNcE
+iS ThAt A 「J0J0」 ReEeReNcE?!?!
 
-Model by: 'Harry.tf'
-Weapon by: 'Reagy'"
+Model by: 'Harry.tf'"
 			"propername"				"1"
 			"image_inventory"			"backpack/weapons/c_models/c_throwingknife"
 			"model_world"				"models/weapons/custom/c_models/c_throwingknife/c_throwingknife.mdl"
@@ -8383,11 +7916,13 @@ Weapon by: 'Reagy'"
 			"static_attrs"
 			{
 				"override projectile type" 				"30"									
-				"damage bonus hidden"					"0.334"								
+				"damage bonus hidden"					"0.645"
+				"bleeding duration"						"2"
 				"allowed in medieval mode"				"1"
-				"UNIQUE maxammo grenades1 HIDDEN"		"3"
 				"min_viewmodel_offset"					"10 0 -10"
 				"no damage falloff over distance"		"1"
+				"maxammo grenades1 increased"			"3"
+				"meter_label"							"KNIVES"
 			}
 			"attributes"
 			{
@@ -8401,30 +7936,41 @@ Weapon by: 'Reagy'"
 					"attribute_class"	"effectbar_recharge_rate"
 					"value"				"0.5"											
 				}
-				"hand scale"															
-				{
-					"attribute_class"	"mult_explosion_radius"
-					"value"				"0.01"
-				}
-				"strange restriction type 1"													
-				{
-					"attribute_class"	"mod_rocket_gravity"
-					"value"				"1.5"
-				}
-				"weapon_stattrak_module_scale"															
-				{
-					"attribute_class"	"blast_dmg_to_self"
-					"value" 			"0"
-				}
-				"damage force increase hidden"												
-				{
-					"attribute_class"	"mult_dmgself_push_force"
-					"value" 			"0"
-				}
 				"crit mod disabled"
 				{
 					"attribute_class"	"mult_crit_chance"
 					"value"				"0"
+				}
+				// Backend stuff
+				"hide_attrib_percentage"	
+				{
+					"attribute_class"	"mult_projectile_speed"
+					"value"				"1.25"													// Tweak to make it more reliable
+				}
+				"hide_attrib_percentage"	
+				{
+					"attribute_class"	"stickybomb_charge_rate"
+					"value" 			"0.75"
+				}
+				"hide_attrib_percentage"														// Charge Rate -buff-, after the TF2C v2.0.1 patch that nerfed the MIRV's base charge time from 7s to 10s.
+				{
+					"attribute_class"	"effectbar_recharge_rate"
+					"value"				"0.35"													// 3 seconds!
+				}
+				"hide_attrib_percentage"	
+				{
+					"attribute_class"	"blast_dmg_to_self"
+					"value" 			"0"
+				}
+				"damage force increase hidden"
+				{
+					"attribute_class"	"mult_dmgself_push_force"
+					"value" 			"0"
+				}
+				"hide_attrib_percentage"														// When did this start working!?
+				{
+					"attribute_class"	"mult_explosion_radius"
+					"value"				"0.05"
 				}
 			}
 			"visuals"
@@ -10819,14 +10365,13 @@ Modified by: 'Reagy'"
 			"item_quality"				"rarity2"
 
 			"propername"				"1"
-			"item_name"					"Protonium Ray-Caster"
-			"item_type_name"			"Experimental Condensed Plasma Launcher"
-			"item_description"			"This weapon fires powerful plasma shots
+			"item_name"					"Death Ray"
+			"item_type_name"			"Handheld Ray Gun"
+			"item_description"			"This weapon fires powerful plasma laser
 			
 Fancy new hardware I got here, wonder if I can cook chicken with it!
 
-Model by: 'svdl'
-Weapon by: 'The One Of Wonders'"
+Model by: 'svdl'"
 			"item_logname"				"lightning_pistol_scout"
 			"item_iconname"				"lightning_pistol_scout"
 			"image_inventory"			"backpack/weapons/c_models/c_lightning_pistol/c_lightning_pistol"
@@ -10840,14 +10385,29 @@ Weapon by: 'The One Of Wonders'"
             "static_attrs"
 			{
 				"class select override vcd"				"class_select_nailgun"
-                "override projectile type"              "6"				
+                "override projectile type"              "32"				
 			}		
 			"attributes"
 			{
+				"Set DamageType Ignite"
+				{
+					"attribute_class"	"set_dmgtype_ignite"
+					"value" 			"1"
+				}
+				"weapon burn time reduced"
+				{
+					"attribute_class"	"mult_wpn_burntime"
+					"value"				"0.2"
+				}
 				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_dmg"
-					"value"				"1.66666666667"
+					"value"				"3.3"
+				}
+				"weapon_stattrak_module_scale"
+				{
+					"attribute_class"	"mult_projectile_speed"
+					"value" 			"2.2"
 				}
 				"weapon_stattrak_module_scale"
 				{
@@ -10879,25 +10439,10 @@ Weapon by: 'The One Of Wonders'"
 					"attribute_class"	"punch_angle_is_constant"
 					"value"				"1"
 				}
-				"weapon_stattrak_module_scale"
-				{
-					"attribute_class"	"mult_projectile_speed"
-					"value" 			"1.75"
-				}
 				"custom projectile origin offset"
 				{
 					"attribute_class"	"custom_projectile_origin_offset"
 					"value"				"30 -4 0"
-				}
-				"custom projectile model"
-				{
-					"attribute_class"	"custom_projectile_model"
-					"value"				"models/weapons/w_models/w_goop_projectile.mdl"
-				}
-				"weapon_stattrak_module_scale"
-				{
-					"attribute_class"	"mult_wpn_burntime"
-					"value"				"0.1"
 				}
 			}
 			"visuals"																			// This is just for consistency!
@@ -11785,16 +11330,15 @@ Weapon by: 'The One Of Wonders'"
 			"item_quality"				"rarity2"
 			"item_slot"                 "primary"
 			"anim_slot"                 "secondary"
-		
-			"item_name"				    "Speedster's Six-Shooter"
-			"item_type_name"			"#TF_WEAPON_REVOLVER"
-			"item_description"			"This weapon fires a tight spread of buckshot.
 
-You ain't looking so pretty now, are ya!
-
-Model by: 'boomsta'
-Weapon by: 'The One Of Wonders'"
 			"propername"				"1"
+			"item_name"				    "Big Iron"
+			"item_type_name"			"#TF_WEAPON_REVOLVER"
+			"item_description"			"This weapon fires a tight spread of buckshot
+
+Their bullets are fast... But he is faster!
+
+Model by: 'boomsta'"
 			"item_logname"				"scattershot_revolver"
 			"item_iconname"				"scattershot_revolver"
 			"image_inventory"			"backpack/workshop/weapons/c_models/c_bigiron/c_bigiron"
@@ -11811,35 +11355,30 @@ Weapon by: 'The One Of Wonders'"
 			}
 			"attributes"
 			{
-				"weapon_stattrak_module_scale"
+				"bullets per shot bonus"
 				{
-					"attribute_class"	"mult_bullets_per_shot"
-					"value"				"5.0" 
+					"attribute_class"	"DISPLAY_ONLY"
+					"value"				"1.3" 
 				}
-				"weapon_stattrak_module_scale"
-				{
-					"attribute_class"	"mult_reload_time"
-					"value"				"1.33" 
-				}
-				"weapon_stattrak_module_scale"
+				"damage penalty"
 				{
 					"attribute_class"	"mult_dmg"
-					"value"				"0.25"
+					"value"				"0.3"
 				}
-				"weapon_stattrak_module_scale"
-				{
-					"attribute_class"	"mult_spread_scale"
-					"value"				"1.67"
-				}
-				"weapon_stattrak_module_scale"
+				"fire rate penalty"
 				{
 					"attribute_class"	"mult_postfiredelay"
 					"value"				"1.1"
 				}
-				"crit mod disabled"
+				"weapon_stattrak_module_scale"
 				{
-					"attribute_class"	"mult_crit_chance"
-					"value"				"0"
+					"attribute_class"	"mult_spread_scale"
+					"value"				"1.66"
+				}
+				"weapon_stattrak_module_scale"
+				{
+					"attribute_class"	"mult_bullets_per_shot"
+					"value"				"3.0" 
 				}
 				"mod use custom ammo type" // primary
 				{
@@ -14002,8 +13541,7 @@ Weapon by: 'The One Of Wonders'"
 			"item_description"			"
 I best like my enemies full of so many holes, I can't tell them apart from swiss cheese!
 
-Model by: 'Overpovered'
-Weapon by: 'The One Of Wonders'"
+Model by: 'Overpovered'"
 			"item_logname"				"blunderbuss_scout"
 			"item_iconname"				"blunderbuss_scout"
 			"image_inventory"			"backpack/weapons/c_models/c_blunderbuss/c_blunderbuss"
@@ -14019,7 +13557,7 @@ Weapon by: 'The One Of Wonders'"
 			    "bullets per shot bonus"
 				{
 					"attribute_class"	"mult_bullets_per_shot"
-					"value"				"1.6"
+					"value"				"1.5"
 				}
 				"Reload time decreased"
 				{
@@ -14387,14 +13925,12 @@ Weapon by: 'The One Of Wonders"
 			"propername"				"1"
 			"item_name"					"Rifleman's Runt"
 			"item_type_name"			"Special Equipment"
-			"item_description"			"Scout turned Recon: You gain access to a rifle primary weapon
-Aim for the head to deal mini-crit damage!
+			"item_description"			"Scout turned Recon: You gain access to a Hunter Rifle on wearer
 
 Alright knuckleheads, it's time to get huntin'!
 
 Weapon Model by: 'Corvalho'  
-Wearable Model by: 'GetGrenade'
-Weapon by: 'The One Of Wonders'"
+Wearable Model by: 'GetGrenade'"
 			"item_logname"				"rifleman_scout"
 			"item_iconname"				"rifleman_scout"
 			"image_inventory"			"backpack/weapons/c_models/c_scout_rifleman/c_scout_rifleman"
@@ -14409,6 +13945,8 @@ Weapon by: 'The One Of Wonders'"
 			"static_attrs"
 			{
 				"class select override vcd"				"taunt02_v2"
+				"custom rampup"							"1"
+				"custom falloff"						"1"
 			}
 			"attributes"
 			{
@@ -14422,11 +13960,6 @@ Weapon by: 'The One Of Wonders'"
 					"attribute_class"	"mult_maxammo_grenades1"
 					"value" 			"2.0"
 				}
-				"move speed penalty" 						
-				{
-					"attribute_class"	"mult_player_movespeed"
-					"value" 			"0.7"
-				}
 				"no damage falloff over distance"
 				{
 					"attribute_class"	"mod_no_dmg_falloff"
@@ -14435,7 +13968,12 @@ Weapon by: 'The One Of Wonders'"
 				"weapon_stattrak_module_scale" 						
 				{
 					"attribute_class"	"mult_dmg"
-					"value" 			"8.0"
+					"value" 			"7.0"
+				}
+				"weapon_stattrak_module_scale"															
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value"				"0.8"
 				}
 				"weapon_stattrak_module_scale" 						
 				{
@@ -14475,16 +14013,6 @@ Weapon by: 'The One Of Wonders'"
 				"punch angle mod add hidden"
 				{
 					"attribute_class"	"punch_angle_is_constant"
-					"value"				"1"
-				}
-				"strange restriction type 1"													
-				{
-					"attribute_class"	"can_headshot"
-					"value"				"1"
-				}
-				"strange restriction type 1"													
-				{
-					"attribute_class"	"headshot_is_minicrit"
 					"value"				"1"
 				}
 			}
@@ -15413,15 +14941,14 @@ Weapon by: 'The One Of Wonders'"
 
 			"item_quality"				"rarity2"
 
-			"propername"				"1"
-			"item_name"					"Staple Burster"
+			"propername"				"0"
+			"item_name"					"The Pseudonailgun"
 			"item_type_name"			"Nail Gun"
 			"item_description"			"Fires rapid 5-round bursts of nails
 
-I'm gonna make a pin cushion out of you, chucklehead!
+Despite what your knowledge of guns is currently telling you, this is not actually a submachinegun or a nailgun.
 
-Model by: 'svdl'
-Weapon by: 'The One Of Wonders'"
+Model by: 'svdl'"
 			"item_logname"				"burstnailgun_scout"
 			"item_iconname"				"burstnailgun_scout"
 			"image_inventory"			"backpack/weapons/c_models/c_nailgun_burst/c_nailgun_burst"
@@ -15438,10 +14965,20 @@ Weapon by: 'The One Of Wonders'"
 			}
 			"attributes"
 			{
-			    "crit mod disabled"															
+				"damage bonus"
 				{
-					"attribute_class"	"mult_crit_chance"
-					"value"				"0"
+					"attribute_class"	"mult_dmg"
+					"value"				"1.4"
+				}
+				"Projectile speed increased"
+				{
+					"attribute_class"	"mult_projectile_speed"
+					"value"				"1.15"
+				}
+				"fire rate penalty"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value"				"0.75"
 				}
 				"weapon_stattrak_module_scale"
 				{
@@ -15457,21 +14994,6 @@ Weapon by: 'The One Of Wonders'"
 				{
 					"attribute_class"	"mult_spread_scale"
 					"value"				"0.001"
-				}
-				"weapon_stattrak_module_scale"
-				{
-					"attribute_class"	"mult_projectile_speed"
-					"value"				"1.15"
-				}
-				"weapon_stattrak_module_scale"
-				{
-					"attribute_class"	"mult_postfiredelay"
-					"value"				"0.75"
-				}
-				"weapon_stattrak_module_scale"
-				{
-					"attribute_class"	"mult_dmg"
-					"value"				"1.5"
 				}
 				"weapon_stattrak_module_scale"
 				{
@@ -15687,68 +15209,6 @@ Weapon by: 'The One Of Wonders'"
 //------------------------
 		"9182"
 		{
-			"name"						"TF_WEAPON_LIBERATOR_CIVILIAN"
-			"prefab"					"weapon_umbrella"
-			"item_class"				"tf_weapon_pistol"
-			"show_in_armory"			"1"
-			"item_quality"				"rarity3"
-
-			"propername"				"1"
-			
-			"item_slot"					"melee"	
-			"anim_slot"                 "secondary"			
-			
-			"item_name"					"Lamplighter"
-			"item_type_name"			"Single Shot Disposable Pistol"
-			"item_description"			"Civilian cannot handle firearms effectively
-
-Lucky Roll: Increased crit chance
-
-Maybe if I use enough of them
-I might be able to sell them off
-for some actual money!
-
-Model by: 'ColonelBD'
-Animations by: 'deskpacito'
-Weapon by: 'Reagy'"
-			"item_logname"				"singleshot_civ"
-			"item_iconname"				"singleshot_civ"
-			"image_inventory"			"backpack/weapons/w_models/w_lamplighter"
-			"model_world"				"models/weapons/custom/w_models/w_lamplighter_new.mdl"
-			"model_player"				"models/weapons/custom/v_models/v_lamplighter.mdl"
-			"extra_wearable"			"models/player/items/civ_bill.mdl"
-			"attach_to_hands"			"2"
-			"used_by_classes"
-			{
-				"civilian"				"1"
-			}
-			"static_attrs"
-			{
-				"class select override vcd"				"taunt01"								// So he isn't posing strangely
-				"clip size penalty hidden"				"0.1"									// 1 shot
-				"hidden secondary max ammo penalty"		"0.2"									// 40 ammo in secondary!
-				"crit mod disabled hidden"				"10.0"
-				"fire rate penalty hidden"				"0.8"									
-				"damage bonus hidden"					"2"
-				"reload time increased hidden"			"1.05"									
-				"min_viewmodel_offset"					"10 0 -11"
-			}
-			"visuals"
-			{
-				"animation_replacement"
-				{
-					"ACT_MP_ATTACK_STAND_MELEE"					"ACT_MP_GESTURE_FLINCH_CHEST"
-					"ACT_MP_ATTACK_CROUCH_MELEE"				"ACT_MP_GESTURE_FLINCH_CHEST"
-					"ACT_MP_ATTACK_SWIM_MELEE"					"ACT_MP_GESTURE_FLINCH_CHEST"
-				}
-				"sound_reload"			"Weapon_Pistol.WorldReload"
-				"sound_single_shot"		"Weapon_1911.Shoot"
-				"sound_burst"			"Weapon_1911.ShootCrit"
-				"muzzle_flash"			"muzzle_scattergun"								
-				"tracer_effect"			"bullet_scattergun_tracer01"					
-			}
-			"mouse_pressed_sound"		"#ui/item_light_gun_pickup.wav"
-			"drop_sound"				"#ui/item_light_gun_drop.wav"
 		}
 //------------------------------
 //------------------------------
@@ -15916,11 +15376,11 @@ Weapon by: 'Reagy'"
 			"item_quality"				"rarity2"
 
 			"propername"				"1"
-			"item_name"					"Timeless Terrorizer"
+			"item_name"					"Industrialist"
 			"item_type_name"			"Scattergun"
 			"item_description"			"This weapon fires 2 slugs per shot
 
-Let them have it!
+First, you revolutionize manufacturing robots, then you revolutionize destroying them.
 
 Model by: 'goldenjohnson'
 Weapon by: 'The One Of Wonders'"
@@ -16020,7 +15480,7 @@ Weapon by: 'The One Of Wonders'"
 			"item_description"			"
 This weapon deals less damage at close range and increased damage at mid range
 
-Don't you even think about it, you moron..!
+Named after a girl that was about as tall as a shotgun, and just as noisy.
 
 Model by: 'Sparkwire'
 Weapon by: 'The One Of Wonders'"
@@ -18155,123 +17615,6 @@ Weapon by: 'The One Of Wonders'"
 //-------------------------
 		"9219"
 		{
-			"name"						"TF_WEAPON_CARDS_CIV"	
-			"prefab"                    "weapon_umbrella"			
-			"item_class"				"tf_weapon_grenadelauncher"
-			"show_in_armory"			"1"
-			
-			"item_slot"					"melee"
-			"item_quality"				"unique"
-			
-			"image_inventory_size_w"	"128"
-			"image_inventory_size_h"	"82"
-
-			"item_quality"				"rarity2"
-			
-			"item_name"					"Royal Flush"
-			"item_type_name"			"Deck of Cards"
-			"item_description"			"Civilian cannot throw cards effectively
-
-Lucky Roll: Increased crit chance
-
-Lets play a game... pick a card
-
-Model by: 'N-Cognito'
-Texture by: 'Reagy'
-Art asset by: 'ChemicalAlia'
-Weapon by: 'Reagy'"
-
-			"flip_viewmodel"			"1"
-
-			"item_logname"				"royal_flush_civ"
-			"item_iconname"				"royal_flush"
-			"image_inventory"			"backpack/weapons/w_models/w_cards"
-			"model_world"				"models/weapons/w_models/w_cards/w_cards.mdl"			
-			"model_player"				"models/weapons/v_models/v_cards/v_cards.mdl"
-			"attach_to_hands"			"2"
-			"used_by_classes"
-			{
-				"civilian"					"1"
-			}
-			"static_attrs"
-			{
-				"class select override vcd"				"taunt01"
-				"override projectile type" 				"30"	
-				"clip size penalty hidden"				"0.2"
-				"hidden primary max ammo bonus"			"3.2"
-				"crit mod disabled hidden"				"10.0"
-			}
-			"attributes"
-			{
-				"provide on active"																
-				{
-					"attribute_class"	"provide_on_active"
-					"value" 			"1"
-				}
-				"bleeding duration"														
-				{
-					"attribute_class"	"bleeding_duration"
-					"value"				"1"
-				}
-				"mark for death"																
-				{
-					"attribute_class"	"mark_for_death"
-					"value" 			"1"
-				}
-				"add condition on hit"															
-				{
-					"attribute_class"	"add_onhit_addcond"
-					"value"				"30 5"
-				}
-				"Reload time decreased"
-				{
-					"attribute_class"	"mult_reload_time"
-					"value" 			"0.85"
-				}
-				"dmg penalty vs buildings"
-				{
-					"attribute_class"	"mult_dmg_vs_buildings"
-					"value" 			"0.459"
-				}
-				"damage penalty"
-				{
-					"attribute_class"	"mult_dmg"
-					"value"				"0.4"
-				}
-				"strange restriction type 1"
-                {
-                    "attribute_class"    "mult_spread_scale"
-                    "value"                "0.06"
-				}	
-				"projectile spread angle penalty"
-                {
-                    "attribute_class"    "DISPLAY_ONLY"
-                    "value"                "4"
-                }
-				"custom projectile model"													
-				{
-					"attribute_class"	"custom_projectile_model"
-					"value"				"models/weapons/w_models/w_cards/w_cards_projectile.mdl"	
-				}
-				"strange restriction type 1"
-				{
-					"attribute_class"	"mod_rocket_gravity"
-					"value"				"1.33"
-				}
-				"weapon_stattrak_module_scale"
-				{
-					"attribute_class"	"mult_projectile_speed"
-					"value"				"0.5"
-				}
-			}
-			"visuals"
-			{
-				"sound_single_shot"		"Weapon_Jarate.Single"
-				"sound_burst"			"Weapon_Jarate.Single"
-				"sound_reload"			"Weapon_Cards.WorldReload"
-			}
-			"mouse_pressed_sound"		"#ui/item_cardboard_pickup.wav"
-			"drop_sound"				"#ui/item_cardboard_drop.wav"
 		}
 //-------------------
 //-------------------
